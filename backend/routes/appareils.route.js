@@ -35,7 +35,7 @@ route.get("/:id", (req, res) => {
 route.post('/', (req, res) => {
   // console.log('Contenu de req.body: ' + req.body._id)
   // appareils.push({ '_id': req.body._id, 'name': req.body.name, 'status': req.body.status })
-  appareils.push(req.body)
+
   res.status(201).json(appareils)
 })
 
