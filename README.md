@@ -34,8 +34,8 @@ Project Steps:
 - add appareil item component
 - add contact component
 - add navbar in header component
-
 - create a git commit & push to your github repository !! 
+
 - create version1 branch and push to github
 - create version2 branch
 - add routing module in app-routing.module.ts
