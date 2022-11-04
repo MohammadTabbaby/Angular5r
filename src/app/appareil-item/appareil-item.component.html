@@ -1,11 +1,12 @@
 <div class="card">
   <div class="card-body">
     <!-- String interpolation -->
-    <div style="width: 15px; height: 15px; background-color: red" *ngIf="appareilStatus === 'éteint'"></div>
+    <div style="width: 15px; height: 15px; background-color: goldenrod" *ngIf="appareilStatus === 'éteint'"></div>
+    <div style="width: 15px; height: 15px; background-color: aqua" *ngIf="appareilStatus === 'allumé'"></div>
     <li [ngClass]="{
         'list-group-item': true,
-        'list-group-item-success': appareilStatus === 'allumé',
-        'list-group-item-danger': appareilStatus === 'éteint'
+        'list-group-item-info': appareilStatus === 'allumé',
+        'list-group-item-warning': appareilStatus === 'éteint'
       }">
       Appareil: {{ appareilName }} - Statut: {{ getStatus() }}
     </li>

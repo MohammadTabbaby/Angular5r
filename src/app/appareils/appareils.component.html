@@ -1,11 +1,8 @@
 <br>
 <h2>Mes Appareils</h2>
 <ul class="list-group" style="width: 50%;">
-  <app-appareil-item [appareilName]="app.name" [appareilStatus]="app.status" *ngFor="let app of appareils"></app-appareil-item>
-
-  <!-- <app-appareil-item></app-appareil-item>
-  <app-appareil-item></app-appareil-item>
-  <app-appareil-item></app-appareil-item> -->
+  <app-appareil-item *ngFor="let app of appareils" [appareilName]="app.name" [appareilStatus]="app.status">
+  </app-appareil-item>
 </ul>
 <br>
 <button class="btn btn-primary" [disabled]="!isAuth">Allumer tout</button>

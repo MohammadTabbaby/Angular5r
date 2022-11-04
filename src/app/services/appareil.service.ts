@@ -14,6 +14,6 @@ export class AppareilService {
     new Appareil('XBOX', 'éteint'),
     new Appareil('Hot', 'allumé'),
   ];
-  
+
   constructor() { }
 }
